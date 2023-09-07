@@ -1,0 +1,154 @@
+.discover {
+   padding: 60px 0px;
+
+
+   @media (max-width: 1024px) {
+      padding: 30px 0px;
+   }
+
+   @media (max-width: 425px) {
+      padding: 20px 0px;
+   }
+
+   &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+
+      @media (max-width: 1140px) {
+         gap: 30px;
+      }
+
+      @media (max-width: 1024px) {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   &__desc {
+      @media (max-width: 375px) {
+         width: 90%;
+      }
+   }
+
+   &__picture {
+      position: relative;
+      z-index: 3;
+
+      @media (max-width: 1024px) {
+         display: none;
+      }
+
+      @media (max-width: 600px) {
+         display: block;
+      }
+
+      @media (max-width: 375px) {
+         width: 90%;
+      }
+   }
+}
+
+.desc-discover {
+
+   &__title {
+      color: var(--text-color);
+      font-size: 4.5rem;
+      font-weight: 700;
+      margin-bottom: 0.34em;
+      position: relative;
+
+      @media (max-width: 768px) {
+         font-size: 3.5rem;
+         line-height: 1.2;
+         margin-bottom: 0.2em;
+      }
+
+      @media (max-width: 600px) {
+         font-size: 2.6rem;
+         line-height: 1.1;
+      }
+
+      @media (max-width: 425px) {
+         font-size: 2rem;
+         line-height: 1;
+      }
+
+      &:before {
+         content: '';
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         background: url('../../img/discover/underline.svg') 0 0/100% no-repeat;
+         width: 268px;
+         height: 24px;
+         z-index: -1;
+
+         @media (max-width: 600px) {
+            display: none;
+         }
+      }
+   }
+
+   &__text {
+      margin-bottom: 40px;
+
+      @media (max-width: 768px) {
+         font-size: 0.875rem;
+         margin-bottom: 1em;
+      }
+   }
+}
+
+.picture-discover {
+
+   &__scroll-down {
+      width: 25%;
+      height: 21.9%;
+      cursor: pointer;
+      position: absolute;
+      right: 15px;
+      bottom: 20px;
+
+      &-inner {
+         overflow: hidden;
+      }
+   }
+}
+
+.scroll-down {
+   &-text {
+      animation: rotation 10s linear 0s infinite normal running;
+   }
+
+   &-icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      circle {
+         animation: circle 1s linear 0s infinite normal running;
+      }
+   }
+}
+
+@keyframes rotation {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes circle {
+   0% {
+      cy: 50;
+   }
+
+   100% {
+      cy: 30;
+   }
+}

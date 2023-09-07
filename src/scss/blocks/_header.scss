@@ -1,0 +1,68 @@
+.header {
+   padding: 1.5em 0px;
+   position: relative;
+   @media (max-width: 768px) {
+      padding: 1em 0px;
+   }
+   @media (max-width: 425px) {
+      padding: 0.5em 0px;
+   }
+
+   &__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 32px;
+      height: 40px;      
+   }
+
+   &__logo {
+      flex: 0 0 122px;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 24px;
+      @media (max-width: 1024px){
+         display: none;
+      }
+   }
+
+   &__btn {
+      @media (max-width: 1024px){
+         display: none;
+      }
+      &--login{
+         color: var(--grey);
+         margin-right: 12px;
+         border: 1px solid #B7B7B7;
+         &:hover{
+            border-color: var(--accent);
+         }
+      }
+      &--signUp{
+         color: var(--white);
+         background: var(--text-color);
+         &:hover{
+            color: var(--accent);
+         }
+      }
+   }
+}
+
+.menu-list {
+   &__link {
+      color: var(--text-color);
+      font-size: 1rem;
+      font-weight: 450;
+      line-height: 150%;
+      transition: all 0.2s ease;
+
+      &:hover {
+         color: var(--accent);
+      }
+   }
+}
+
+

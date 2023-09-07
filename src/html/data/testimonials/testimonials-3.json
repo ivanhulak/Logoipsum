@@ -1,0 +1,44 @@
+[
+   {
+      "text": "I loved the personalized itinerary feature of this travel website. It allowed me to plan my trip according to my preferences, making it a truly customized experience.",
+      "name": "Angela Cole",
+      "position": "Travel Enthusiast",
+      "image": "07.jpg",
+      "stars": 2
+   },
+   {
+      "text": "Hello, everyone!",
+      "name": "Ivan H.",
+      "position": "Travel Enthusiast",
+      "image": "08.jpg",
+      "stars": 5
+   },
+   {
+      "text": "A one-stop-shop for all things travel! The website's variety of travel options and user reviews helped me make informed decisions and ensured a smooth trip.",
+      "name": "Bambang Susilo",
+      "position": "Travel Enthusiast",
+      "image": "09.jpg",
+      "stars": 4
+   },
+   {
+      "text": "I loved the personalized itinerary feature of this travel website. It allowed me to plan my trip according to my preferences, making it a truly customized experience.",
+      "name": "Angela Cole",
+      "position": "Travel Enthusiast",
+      "image": "07.jpg",
+      "stars": 2
+   },
+   {
+      "text": "Hello, everyone!",
+      "name": "Ivan H.",
+      "position": "Travel Enthusiast",
+      "image": "08.jpg",
+      "stars": 5
+   },
+   {
+      "text": "A one-stop-shop for all things travel! The website's variety of travel options and user reviews helped me make informed decisions and ensured a smooth trip.",
+      "name": "Bambang Susilo",
+      "position": "Travel Enthusiast",
+      "image": "09.jpg",
+      "stars": 4
+   }
+]

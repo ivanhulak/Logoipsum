@@ -1,0 +1,25 @@
+<div class="swiper-slide card-testimonials">
+   <div class="card-testimonials__inner">
+      <div class="card-testimonials__rating rating-flex">
+         <div class="rating-flex__container">
+            @@for (var i = 0; i < context.stars; i++){
+               <img src="./img/icons/star.svg" alt="star icon">
+            }
+            @@if (context.stars < 5){ @@for (var i=0; i < 5 - context.stars; i++){ 
+               <img src="./img/icons/star-off.svg" alt="star off icon">
+               }
+            }
+         </div>
+      </div>
+      <div class="card-testimonials__response subtitle-2">"@@text"</div>
+      <div class="card-testimonials__support support">
+         <div class="support__image">
+            <img src="./img/testimonials/@@image" alt="">
+         </div>
+         <div class="support__info">
+            <div class="support__name">@@name</div>
+            <div class="support__position">@@position</div>
+         </div>
+      </div>
+   </div>
+</div>

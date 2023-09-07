@@ -1,0 +1,34 @@
+<section class="testimonials">
+   <div class="container">
+      <div class="testimonials__horizontal horizontal">
+         <div class="swiper horizontal-swiper">
+            <div class="swiper-wrapper smooth-transition">
+               @@loop('./templates/testimonials-card.html', './data/testimonials/testimonials-all.json')
+            </div>
+         </div>
+      </div>
+      <div class="testimonials__vertical vertical">
+         <div class="vertical__column vertical__column-col-1">
+            <div class="swiper vertical-swiper">
+               <div class="swiper-wrapper smooth-transition">
+                  @@loop('./templates/testimonials-card.html', './data/testimonials/testimonials-1.json')
+               </div>
+            </div>
+         </div>
+         <div class="vertical__column vertical__column-col-2">
+            <div class="swiper vertical-swiper">
+               <div class="swiper-wrapper smooth-transition">
+                  @@loop('./templates/testimonials-card.html', './data/testimonials/testimonials-2.json')
+               </div>
+            </div>
+         </div>
+         <div class="vertical__column vertical__column-col-3">
+            <div class="swiper vertical-swiper">
+               <div class="swiper-wrapper smooth-transition">
+                  @@loop('./templates/testimonials-card.html', './data/testimonials/testimonials-3.json')
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>

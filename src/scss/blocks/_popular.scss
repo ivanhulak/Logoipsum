@@ -1,0 +1,85 @@
+.popular {
+   padding: 60px 0px;
+
+   @media (max-width: 1024px) {
+      padding: 30px 0px;
+   }
+   @media (max-width: 768px) {
+      padding: 20px 0px;
+   }
+   @media (max-width: 425px) {
+      padding: 10px 0px;
+   }
+
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 30px;
+      margin-bottom: 32px;
+
+      @media (max-width: 1024px) {
+         margin-bottom: 20px;
+      }
+
+      @media (max-width: 475px) {
+         margin-bottom: 10px;
+      }
+
+      &__title {
+         margin-bottom: 16px;
+      }
+   }
+
+   &__slider {
+      &-contolls {
+         display: flex;
+         justify-content: space-between;
+         column-gap: 15px;
+         flex: 0 0 auto;
+
+         @media (max-width: 475px) {
+            column-gap: 5px;
+         }
+
+         button {
+            transition: all 0.3s ease;
+
+            svg {
+               @media (max-width: 475px) {
+                  width: 36px;
+                  height: 36px;
+               }
+            }
+
+            &:hover {
+               opacity: 0.6;
+            }
+         }
+      }
+
+   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+   svg path {
+      fill: var(--white);
+   }
+
+   svg rect {
+      stroke: none;
+      fill: var(--accent);
+   }
+}
+
+.swiper-button-disabled {
+   svg path {
+      fill: #B9B9B9;
+   }
+
+   svg rect {
+      stroke: #B9B9B9;
+      fill: var(--white);
+   }
+}

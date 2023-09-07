@@ -1,0 +1,33 @@
+.support {
+   background: var(--white);
+   @media (max-width: 1024px) {
+      column-gap: 8px;
+   }
+
+   &__image {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+
+      @media (max-width: 1024px) {
+         width: 36px;
+         height: 36px;
+      }
+   }
+
+   &__name {
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 150%;
+      @media (max-width: 1024px) {
+         font-size: 1rem;
+      }
+   }
+
+   &__position {
+      color: var(--light-grey);
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 150%;
+   }
+}

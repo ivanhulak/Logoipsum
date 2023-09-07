@@ -1,0 +1,98 @@
+.search-form {
+   display: flex;
+   justify-content: space-between;
+   border-radius: 16px;
+   border: 1px solid rgba(144, 144, 144, 0.30);
+   background: var(--white);
+   padding: 13px 16px;
+   pointer-events: all;
+
+   @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 15px;
+   }
+
+   &__location,
+   &__date {
+      padding-left: 36px;
+      position: relative;
+
+      @media (min-width: 600px) {
+         flex: 1 1 216px;
+      }
+
+      span {
+         display: inline-block;
+         font-size: 1rem;
+         color: var(--text-color);
+         font-weight: 500;
+         margin-bottom: 8px;
+      }
+
+      &:before {
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 24px;
+         height: 24px;
+      }
+   }
+
+   &__location:before {
+      background: url('../../img/icons/map.svg') 0 0/100% no-repeat;
+   }
+
+   &__date:before {
+      background: url('../../img/icons/calendar.svg') 0 0/100% no-repeat;
+   }
+
+   &__location:after {
+      @media (min-width: 600px) {
+         content: '';
+         position: absolute;
+         right: 16px;
+         top: 50%;
+         width: 1px;
+         height: 24px;
+         transform: translateY(-50%);
+         background: var(--light-grey);
+      }
+   }
+
+
+   &__input {
+      display: block;
+
+      &::placeholder {
+         color: var(--light-grey);
+         font-size: 0.875rem;
+         font-weight: 450;
+      }
+
+      .container.time-plugin.show {
+         top: -200px;
+      }
+   }
+
+   &__btn {
+      background: var(--accent);
+      padding: 12px;
+      border-radius: 10px;
+      transition: all 0.2s ease;
+
+      &:hover {
+         background: var(--text-color);
+      }
+   }
+
+}
+
+#shadow-open {
+   .easepick-wrapper {
+      .show {
+         top: -100px;
+         scale: (0.7);
+      }
+   }
+}
